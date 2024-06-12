@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dual_clock.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,18 +14,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark(useMaterial3: true).copyWith(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 72, 45, 119)),
-        scaffoldBackgroundColor: const Color.fromARGB(255, 30, 30, 60), // Cambia este color para ajustar el fondo del cuerpo
+        scaffoldBackgroundColor: const Color.fromARGB(255, 30, 30, 60),
       ),
       home: const MyHomePage(title: 'Sebas Flutter Page'),
     );
   }
 }
 
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
- 
 
   final String title;
 
@@ -37,10 +35,59 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        title: Text(widget.title, style: const TextStyle(color: Colors.white)),
+        
       ),
-      body: const DualClock(), // Usa el widget DualClock aquí
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'Menú',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text('Inicio'),
+              onTap: () {
+                // Acción para el ítem de Inicio
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text('Configuraciones'),
+              onTap: () {
+                // Acción para el ítem de Configuraciones
+              },
+            ),
+          ],
+        ),
+      ),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color.fromARGB(255, 30, 30, 60), Color.fromARGB(255, 72, 45, 119)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: const DualClock(), // Usa el widget DualClock aquí
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Acción para el botón flotante
+        },
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
