@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dual_clock.dart';
+import 'image_gallery.dart'; // Importa el nuevo archivo
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(widget.title, style: const TextStyle(color: Colors.white)),
-        
       ),
       drawer: Drawer(
         child: ListView(
@@ -59,14 +59,17 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.home),
               title: const Text('Inicio'),
               onTap: () {
-                // Acción para el ítem de Inicio
+                Navigator.pop(context); // Cierra el drawer
               },
             ),
             ListTile(
-              leading: const Icon(Icons.settings),
-              title: const Text('Configuraciones'),
+              leading: const Icon(Icons.photo),
+              title: const Text('Galería de Imágenes'),
               onTap: () {
-                // Acción para el ítem de Configuraciones
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ImageGallery()),
+                );
               },
             ),
           ],

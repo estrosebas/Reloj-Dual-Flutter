@@ -10,3 +10,4 @@ com.example.myapp-rs-8 /home/user/myapp/build/app/generated/res/rs/debug
 com.example.myapp-mergeDebugResources-9 /home/user/myapp/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
 com.example.myapp-mergeDebugResources-10 /home/user/myapp/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
 com.example.myapp-merged_res-11 /home/user/myapp/build/app/intermediates/merged_res/debug
+com.example.myapp-packaged_res-12 /home/user/myapp/build/path_provider_android/intermediates/packaged_res/debug

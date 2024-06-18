@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <!--
          Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
@@ -26,7 +28,7 @@
         android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="myapp" >
+        android:label="Reloj dual" >
         <activity
             android:name="com.example.myapp.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

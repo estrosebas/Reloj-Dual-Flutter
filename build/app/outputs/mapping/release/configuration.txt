@@ -290,7 +290,7 @@
 }
 
 # End of content from /home/user/.gradle/caches/transforms-3/1df962ed8245cc6ecc6dae80a3756f32/transformed/lifecycle-viewmodel-2.1.0/proguard.txt
-# The proguard configuration file for the following section is /home/user/.gradle/caches/transforms-3/7ffe2ebcc3642108243ffd79b3225318/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /home/user/.gradle/caches/transforms-3/67d1c69d4c41cb8901ed1326e7d1f850/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
 -keep,allowobfuscation @interface androidx.annotation.Keep
 -keep @androidx.annotation.Keep class * {*;}
 
@@ -310,7 +310,7 @@
   @androidx.annotation.DoNotInline <methods>;
 }
 
-# End of content from /home/user/.gradle/caches/transforms-3/7ffe2ebcc3642108243ffd79b3225318/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# End of content from /home/user/.gradle/caches/transforms-3/67d1c69d4c41cb8901ed1326e7d1f850/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
 # The proguard configuration file for the following section is /home/user/.gradle/caches/transforms-3/3d2f03fc996c2e0aa3dee5cfa3002cd1/transformed/jetified-annotation-experimental-1.1.0/proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #
