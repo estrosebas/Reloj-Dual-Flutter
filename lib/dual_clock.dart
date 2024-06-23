@@ -289,11 +289,8 @@ class _DualClockState extends State<DualClock> {
   }
 
   String _compareSchedules(DateTime peruTime, DateTime boliviaTime) {
-  // Restar una hora a la hora de Bolivia
-  boliviaTime = boliviaTime.subtract(const Duration(hours: 1));
-
-  bool peruBusy = _isTimeInSchedule(peruTime, _peruSchedules);
-  bool boliviaBusy = _isTimeInSchedule(boliviaTime, _boliviaSchedules);
+    bool peruBusy = _isTimeInSchedule(peruTime, _peruSchedules);
+    bool boliviaBusy = _isTimeInSchedule(boliviaTime, _boliviaSchedules);
 
     if (peruBusy && boliviaBusy) {
       return 'Ambos están ocupados';

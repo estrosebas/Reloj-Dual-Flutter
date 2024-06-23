@@ -39,8 +39,8 @@
 28-->/home/user/myapp/android/app/src/main/AndroidManifest.xml:5:9-42
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.6.0] /home/user/.gradle/caches/transforms-3/284a410c767ad6c7a2b0ffc8d8d85981/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
-30        android:icon="@mipmap/ic_launcher"
-30-->/home/user/myapp/android/app/src/main/AndroidManifest.xml:6:9-43
+30        android:icon="@mipmap/launcher_icon"
+30-->/home/user/myapp/android/app/src/main/AndroidManifest.xml:6:9-45
 31        android:label="Reloj dual" >
 31-->/home/user/myapp/android/app/src/main/AndroidManifest.xml:4:9-35
 32        <activity

@@ -1324,7 +1324,8 @@ Marking id:line3:2131034161 used because it matches string pool constant line
     @style/TextAppearance_Compat_Notification_Time
 @layout/notification_template_part_time : reachable=false
     @style/TextAppearance_Compat_Notification_Time
-@mipmap/ic_launcher : reachable=true
+@mipmap/ic_launcher : reachable=false
+@mipmap/launcher_icon : reachable=true
 @string/status_bar_notification_info_overflow : reachable=false
 @style/LaunchTheme : reachable=true
     @drawable/launch_background
@@ -1395,7 +1396,7 @@ The root reachable resources are:
  id:locale:2131034162
  id:text:2131034184
  id:text2:2131034185
- mipmap:ic_launcher:2131230720
+ mipmap:launcher_icon:2131230721
  style:LaunchTheme:2131361792
  style:NormalTheme:2131361793
 Skipped unused resource res/drawable-v21/notification_action_background.xml: 2250 bytes (replaced with small dummy file of size 9 bytes)
@@ -1425,3 +1426,8 @@ Skipped unused resource res/layout-v21/notification_template_custom_big.xml: 631
 Skipped unused resource res/layout-v21/notification_template_icon_group.xml: 2432 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/notification_template_part_chronometer.xml: 643 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/notification_template_part_time.xml: 630 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/mipmap-mdpi-v4/ic_launcher.png: 405 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-hdpi-v4/ic_launcher.png: 36983 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xhdpi-v4/ic_launcher.png: 684 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxhdpi-v4/ic_launcher.png: 994 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxxhdpi-v4/ic_launcher.png: 1406 bytes (replaced with small dummy file of size 67 bytes)

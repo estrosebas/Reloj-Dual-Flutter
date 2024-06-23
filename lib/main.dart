@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromARGB(255, 30, 30, 60),
       ),
       home: const MyHomePage(title: 'Sebas Flutter Page'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
